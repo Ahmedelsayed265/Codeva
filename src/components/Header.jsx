@@ -16,7 +16,9 @@ export default function Header() {
           <NavLink to="/contact">Contact Us</NavLink>
         </div>
 
-        <div className="others"></div>
+        <div className="others">
+          <button className="lang">AR</button>
+        </div>
       </nav>
     </header>
   );

@@ -36,6 +36,7 @@
 
 $main: #000;
 $white: #fff;
+$blue: #0d6efd;
 $text: #848584;
 $transition: all 0.3s ease-in-out;
 
@@ -83,45 +84,8 @@ input[type="number"] {
   -moz-appearance: textfield;
 }
 
-.dropdown-menu {
-  border: 0 !important;
-  box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.1);
-  margin-top: 14px !important;
-  background: $white;
-  border-radius: 8px;
-  padding: 8px;
-  span {
-    display: block;
-    width: 100%;
-    height: 1px;
-    background: $white;
-    margin: 8px 0;
-  }
-  a {
-    text-align: start;
-    border-radius: 4px;
-    padding: 6px 12px;
-    font-size: 14px;
-    color: $main;
-    display: flex;
-    margin-bottom: 2px;
-    align-items: center;
-    gap: 8px;
-    &:active {
-      background: $main;
-    }
-    i {
-      width: 18px;
-    }
-  }
-}
-
 .row {
   margin: 0;
-}
-
-.container {
-  padding: 0;
 }
 
 .dropdown-toggle::after {

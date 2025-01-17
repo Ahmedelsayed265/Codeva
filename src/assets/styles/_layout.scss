@@ -17,13 +17,18 @@ header {
     }
 
     .nav_links {
-      flex: 2;
+      flex: 3;
       @include centerFlex();
       gap: 48px;
       padding: 0 32px;
+      @media screen and (max-width: 992px) {
+        display: none;
+      }
+
       a {
         color: $text;
-        &.active {
+        &.active,
+        &:hover {
           color: $white;
         }
       }
@@ -31,6 +36,13 @@ header {
 
     .others {
       flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+
+      .lang {
+        color: $white;
+      }
     }
   }
 }
