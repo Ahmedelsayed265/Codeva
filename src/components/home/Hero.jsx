@@ -6,7 +6,7 @@ export default function Hero() {
       <div className="content">
         <h6>Let’s Build Your Ideas Together</h6>
         <h1>
-          <span>Codeva</span> For Innovative Software Solutions
+          Codeva For Innovative Software Solutions
         </h1>
         <p>
           We provide expert website design, development, and mobile application

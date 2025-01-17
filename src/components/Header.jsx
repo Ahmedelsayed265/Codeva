@@ -1,11 +1,27 @@
+import { useEffect } from "react";
 import { Link, NavLink } from "react-router-dom";
 
 export default function Header() {
+  useEffect(() => {
+    const handleScroll = () => {
+      const header = document.querySelector("header");
+      if (header) {
+        header.classList.toggle("blured", window.scrollY > 0);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <header>
       <nav className="container">
-        <Link className="logo">
-          <img src="/logo.svg" alt="" />
+        <Link className="logo" to="/">
+          <img src="/logo.svg" alt="Codeva Logo" />
         </Link>
 
         <div className="nav_links">
@@ -17,7 +33,10 @@ export default function Header() {
         </div>
 
         <div className="others">
-          <button className="lang">AR</button>
+          <button>AR</button>
+          <button>
+            <i className="fa-regular fa-bars"></i>
+          </button>
         </div>
       </nav>
     </header>
