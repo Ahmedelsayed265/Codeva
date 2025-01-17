@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  line-height: 1.4;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  -webkit-tap-highlight-color: transparent;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #000;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #aaaaaa;
+  border-radius: 30px;
+}
+
+button,
+input,
+select,
+textarea {
+  border: none;
+  background: none;
+  outline: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a,
+button {
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  color: #000;
+}
+
+input[type=number] {
+  -webkit-appearance: textfield;
+          appearance: textfield;
+  -moz-appearance: textfield;
+}
+input[type=number]::-webkit-outer-spin-button {
+  display: none;
+}
+input[type=number]::-webkit-inner-spin-button {
+  display: none;
+}
+
+.dropdown-menu {
+  border: 0 !important;
+  box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.1);
+  margin-top: 14px !important;
+  background: #fff;
+  border-radius: 8px;
+  padding: 8px;
+}
+.dropdown-menu span {
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: #fff;
+  margin: 8px 0;
+}
+.dropdown-menu a {
+  text-align: start;
+  border-radius: 4px;
+  padding: 6px 12px;
+  font-size: 14px;
+  color: #000;
+  display: flex;
+  margin-bottom: 2px;
+  align-items: center;
+  gap: 8px;
+}
+.dropdown-menu a:active {
+  background: #000;
+}
+.dropdown-menu a i {
+  width: 18px;
+}
+
+.row {
+  margin: 0;
+}
+
+.container {
+  padding: 0;
+}
+
+.dropdown-toggle::after {
+  display: none;
+}
+
+input[type=email] {
+  direction: ltr !important;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  direction: ltr;
+  background: #000;
+}
+body.ar {
+  direction: rtl;
+}/*# sourceMappingURL=main.css.map */

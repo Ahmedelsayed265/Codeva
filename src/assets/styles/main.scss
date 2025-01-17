@@ -1,0 +1,13 @@
+@import "./config";
+
+body {
+  font-family: "Outfit", sans-serif;
+  direction: ltr;
+  background: $main;
+
+  @import "./layout";
+
+  &.ar {
+    direction: rtl;
+  }
+}
