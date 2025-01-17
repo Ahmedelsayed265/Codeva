@@ -36,10 +36,11 @@
 
 $main: #000;
 $white: #fff;
+$text: #848584;
 $transition: all 0.3s ease-in-out;
 
 ::-webkit-scrollbar {
-  width: 4px;
+  width: 2px;
 }
 
 ::-webkit-scrollbar-track {
@@ -47,7 +48,7 @@ $transition: all 0.3s ease-in-out;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #aaaaaa;
+  background: $text;
   border-radius: 30px;
 }
 

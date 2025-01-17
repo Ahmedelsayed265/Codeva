@@ -4,8 +4,10 @@ body {
   font-family: "Outfit", sans-serif;
   direction: ltr;
   background: $main;
+  position: relative;
 
   @import "./layout";
+  @import "./home";
 
   &.ar {
     direction: rtl;

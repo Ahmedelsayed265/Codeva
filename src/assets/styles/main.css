@@ -9,7 +9,7 @@
 }
 
 ::-webkit-scrollbar {
-  width: 4px;
+  width: 2px;
 }
 
 ::-webkit-scrollbar-track {
@@ -17,7 +17,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #aaaaaa;
+  background: #848584;
   border-radius: 30px;
 }
 
@@ -108,6 +108,58 @@ body {
   font-family: "Outfit", sans-serif;
   direction: ltr;
   background: #000;
+  position: relative;
+}
+body header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  padding: 32px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1019607843);
+}
+body header nav {
+  display: flex;
+  align-items: center;
+}
+body header nav .logo {
+  flex: 1;
+}
+body header nav .logo img {
+  height: 20px;
+}
+body header nav .nav_links {
+  flex: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 48px;
+  padding: 0 32px;
+}
+body header nav .nav_links a {
+  color: #848584;
+}
+body header nav .nav_links a.active {
+  color: #fff;
+}
+body header nav .others {
+  flex: 1;
+}
+body .intro_section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+body .intro_section video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 body.ar {
   direction: rtl;

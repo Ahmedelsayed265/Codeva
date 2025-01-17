@@ -1,0 +1,36 @@
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  padding: 32px 0;
+  border-bottom: 1px solid #ffffff1a;
+  nav {
+    display: flex;
+    align-items: center;
+    .logo {
+      flex: 1;
+      img {
+        height: 20px;
+      }
+    }
+
+    .nav_links {
+      flex: 2;
+      @include centerFlex();
+      gap: 48px;
+      padding: 0 32px;
+      a {
+        color: $text;
+        &.active {
+          color: $white;
+        }
+      }
+    }
+
+    .others {
+      flex: 1;
+    }
+  }
+}
