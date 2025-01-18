@@ -40,20 +40,6 @@ function Particles({ count = 1000 }) {
   );
 }
 
-function CodevaText() {
-  return (
-    <Text
-      position={[0, 0, 0]}
-      fontSize={1.5}
-      color="white"
-      anchorX="center"
-      anchorY="middle"
-    >
-      Codeva
-    </Text>
-  );
-}
-
 export default function Hero() {
   return (
     <section className="hero_section">
@@ -92,7 +78,6 @@ export default function Hero() {
               <ambientLight intensity={0.5} />
               <pointLight position={[10, 10, 10]} intensity={1} />
               <Particles count={2000} />
-              <CodevaText />
               <OrbitControls enableZoom={false} />
             </Canvas>
           </div>
