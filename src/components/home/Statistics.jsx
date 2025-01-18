@@ -16,11 +16,11 @@ export default function Statistics() {
                 <h6>Years of Experience</h6>
               </div>
               <div className="box">
-                <h4>+12</h4>
+                <h4>+100</h4>
                 <h6>Website</h6>
               </div>
               <div className="box">
-                <h4>+4</h4>
+                <h4>+24</h4>
                 <h6>Mobile App</h6>
               </div>
               <div className="box">

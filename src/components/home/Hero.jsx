@@ -52,7 +52,7 @@ export default function Hero() {
                 Together
               </h6>
               <h1>
-                Codeva For Innovative Software <span>Solutions</span>
+                Codeva For Innovative Software <span className="highlight">Solutions</span>
               </h1>
               <p>
                 We provide expert website design, development, and mobile
