@@ -121,7 +121,7 @@ body header nav .others {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  gap: 16px;
+  gap: 24px;
 }
 body header nav .others button, body header nav .others a {
   color: #fff;

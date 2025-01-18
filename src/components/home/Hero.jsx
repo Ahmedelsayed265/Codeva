@@ -1,5 +1,5 @@
 import { Canvas, useFrame } from "@react-three/fiber";
-import { OrbitControls } from "@react-three/drei";
+import { OrbitControls, Text } from "@react-three/drei";
 import { useRef, useMemo } from "react";
 
 function Particles({ count = 1000 }) {
@@ -35,8 +35,22 @@ function Particles({ count = 1000 }) {
           itemSize={3}
         />
       </bufferGeometry>
-      <pointsMaterial size={0.03} color="white" transparent opacity={0.9} />
+      <pointsMaterial size={0.03} color="white" opacity={0.9} />
     </points>
+  );
+}
+
+function CodevaText() {
+  return (
+    <Text
+      position={[0, 0, 0]}
+      fontSize={1.5}
+      color="white"
+      anchorX="center"
+      anchorY="middle"
+    >
+      Codeva
+    </Text>
   );
 }
 
@@ -51,9 +65,7 @@ export default function Hero() {
                 <img src="/idea.svg" alt="idea" /> Let’s Build Your Ideas
                 Together
               </h6>
-              <h1>
-                Codeva For Innovative <span>Software Solutions</span>
-              </h1>
+              <h1>Codeva For Innovative Software Solutions</h1>
               <p>
                 We provide expert website design, development, and mobile
                 application solutions for Android and IOS. Serving a diverse
@@ -71,15 +83,16 @@ export default function Hero() {
             <Canvas
               style={{
                 height: "450px",
-                width: "450px", // Ensure square canvas
-                borderRadius: "50%", // Add spherical frame
-                overflow: "hidden", // Hide edges outside the frame
+                width: "450px",
+                borderRadius: "50%",
+                overflow: "hidden",
               }}
-              camera={{ position: [5, 5, 5], fov: 50 }}
+              camera={{ position: [5, 5, 5], fov: 70 }}
             >
               <ambientLight intensity={0.5} />
               <pointLight position={[10, 10, 10]} intensity={1} />
               <Particles count={2000} />
+              <CodevaText />
               <OrbitControls enableZoom={false} />
             </Canvas>
           </div>
