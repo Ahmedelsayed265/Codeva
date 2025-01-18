@@ -47,7 +47,7 @@ header {
       justify-content: flex-end;
       gap: 16px;
 
-      button {
+      button, a {
         color: $white;
 
         &:last-child {

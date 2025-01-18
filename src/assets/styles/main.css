@@ -123,14 +123,14 @@ body header nav .others {
   justify-content: flex-end;
   gap: 16px;
 }
-body header nav .others button {
+body header nav .others button, body header nav .others a {
   color: #fff;
 }
-body header nav .others button:last-child {
+body header nav .others button:last-child, body header nav .others a:last-child {
   display: none;
 }
 @media screen and (max-width: 992px) {
-  body header nav .others button:last-child {
+  body header nav .others button:last-child, body header nav .others a:last-child {
     display: block;
   }
 }
@@ -142,25 +142,39 @@ body .hero_section {
 body .hero_section .content {
   height: 100%;
   display: flex;
-  align-items: center;
   justify-content: center;
   flex-direction: column;
   gap: 8px;
-  width: min(100% - 16px, 800px);
   margin: 0 auto;
 }
 body .hero_section .content h6 {
   color: #fff;
+  width: -moz-fit-content;
+  width: fit-content;
   font-size: 14px;
   border: 1px solid rgba(255, 255, 255, 0.1019607843);
   background: rgba(255, 255, 255, 0.1019607843);
-  padding: 10px 32px;
+  padding: 10px 28px;
   border-radius: 40px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+body .hero_section .content h6 img {
+  height: 20px;
 }
 body .hero_section .content h1 {
   color: #fff;
-  text-align: center;
-  font-size: 42px;
+  font-size: 62px;
+}
+body .hero_section .content h1 span {
+  background-image: -webkit-linear-gradient(171deg, rgb(37, 0, 93) 0%, rgb(102, 0, 255) 61%, rgb(255, 184, 91) 100%);
+  background-size: 200% 200%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+  animation: 6s infinite alternate gradientAnimation;
 }
 @media screen and (max-width: 576px) {
   body .hero_section .content h1 {
@@ -169,9 +183,7 @@ body .hero_section .content h1 {
 }
 body .hero_section .content p {
   color: #848584;
-  padding: 0 24px;
   font-size: 18px;
-  text-align: center;
 }
 @media screen and (max-width: 576px) {
   body .hero_section .content p {
@@ -191,18 +203,34 @@ body .hero_section .content .buttons {
 }
 body .hero_section .content .buttons a {
   color: #fff;
-  border: 1px solid #0d6efd;
-  background: #0d6efd;
+  background-image: linear-gradient(150deg, rgb(37, 0, 93) 0%, rgb(102, 0, 255) 61%, rgb(255, 184, 91) 100%);
   padding: 12px 32px;
   border-radius: 60px;
+  transition: all 0.3s ease-in-out;
 }
-body .hero_section .content .buttons a:first-child {
-  background: transparent;
+body .hero_section .content .buttons a:last-child {
+  background: #fff;
+  color: #0d6efd;
 }
 @media screen and (max-width: 576px) {
   body .hero_section .content .buttons a {
-    padding: 12px 28px;
+    padding: 10px 28px;
     font-size: 14px;
+  }
+}
+body canvas {
+  width: 100% !important;
+  height: 100% !important;
+}
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
   }
 }
 body.ar {

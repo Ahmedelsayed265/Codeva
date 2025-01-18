@@ -33,6 +33,7 @@ export default function Header() {
         </div>
 
         <div className="others">
+          <Link to="mailto:info@codeva.com">Let&rsquo;s Talk</Link>
           <button>AR</button>
           <button>
             <i className="fa-regular fa-bars"></i>
