@@ -320,9 +320,54 @@ body .hero_section .content .buttons a:last-child {
     font-size: 14px;
   }
 }
-body canvas {
-  width: 100% !important;
-  height: 100% !important;
+body .statistics_section {
+  padding: 80px 0;
+  background: #fff;
+}
+body .statistics_section h2 {
+  text-align: center;
+  font-size: 42px;
+  color: #000;
+  margin-bottom: 16px;
+}
+body .statistics_section p {
+  text-align: center;
+  font-size: 16px;
+  color: #848584;
+  margin-bottom: 48px;
+}
+body .statistics_section .thumb {
+  text-align: center;
+  padding: 8px 24px;
+  background: #fafafa;
+  color: #0d6efd;
+  margin: 0 auto 16px;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 40px;
+}
+body .statistics_section .boxes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+}
+body .statistics_section .boxes .box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 24px;
+  gap: 8px;
+  border-radius: 12px;
+  background: #fafafa;
+}
+body .statistics_section .boxes .box h4 {
+  font-size: 32px;
+  color: #0d6efd;
+}
+body .statistics_section .boxes .box h6 {
+  font-size: 16px;
+  color: #000;
 }
 @keyframes gradientAnimation {
   0% {
