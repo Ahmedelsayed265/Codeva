@@ -51,7 +51,7 @@ export default function Hero() {
                 <img src="/idea.svg" alt="idea" /> Let’s Build Your Ideas
                 Together
               </h6>
-              <h1>Codeva For Innovative Software Solutions</h1>
+              <h1>Codeva For Innovative Software <span>Solutions</span></h1>
               <p>
                 We provide expert website design, development, and mobile
                 application solutions for Android and IOS. Serving a diverse
