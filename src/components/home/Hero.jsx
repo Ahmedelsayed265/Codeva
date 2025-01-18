@@ -51,7 +51,9 @@ export default function Hero() {
                 <img src="/idea.svg" alt="idea" /> Let’s Build Your Ideas
                 Together
               </h6>
-              <h1>Codeva For Innovative Software <span>Solutions</span></h1>
+              <h1>
+                Codeva For Innovative Software <span>Solutions</span>
+              </h1>
               <p>
                 We provide expert website design, development, and mobile
                 application solutions for Android and IOS. Serving a diverse
@@ -65,7 +67,7 @@ export default function Hero() {
             </div>
           </div>
 
-          <div className="col-lg-6 col-12 p-2 d-flex align-items-center justify-content-end">
+          <div className="col-lg-6 col-12 p-2 d-lg-flex d-none align-items-center justify-content-end">
             <Canvas
               style={{
                 height: "450px",

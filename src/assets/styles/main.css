@@ -137,7 +137,7 @@ body header nav .others button:last-child, body header nav .others a:last-child 
 body .hero_section {
   width: 100%;
   height: 100vh;
-  padding-top: 90px;
+  padding-top: 88px;
 }
 body .hero_section .content {
   height: 100%;
@@ -154,7 +154,7 @@ body .hero_section .content h6 {
   font-size: 14px;
   border: 1px solid rgba(255, 255, 255, 0.1019607843);
   background: rgba(255, 255, 255, 0.1019607843);
-  padding: 10px 28px;
+  padding: 10px 24px;
   border-radius: 40px;
   display: flex;
   align-items: center;
@@ -178,7 +178,7 @@ body .hero_section .content h1 span {
 }
 @media screen and (max-width: 576px) {
   body .hero_section .content h1 {
-    font-size: 32px;
+    font-size: 36px;
   }
 }
 body .hero_section .content p {
@@ -187,7 +187,7 @@ body .hero_section .content p {
 }
 @media screen and (max-width: 576px) {
   body .hero_section .content p {
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 body .hero_section .content .buttons {
