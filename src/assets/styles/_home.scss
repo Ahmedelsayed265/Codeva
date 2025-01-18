@@ -214,3 +214,14 @@
   -webkit-text-fill-color: transparent;
   animation: 6s infinite alternate gradientAnimation;
 }
+
+.services_section {
+  padding: 80px 0;
+  border-top: 1px solid #ffffff1a;
+  h2 {
+    text-align: center;
+    font-size: 36px;
+    color: $white;
+    margin-bottom: 16px;
+  }
+}

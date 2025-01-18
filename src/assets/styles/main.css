@@ -457,6 +457,16 @@ body .highlight {
   -webkit-text-fill-color: transparent;
   animation: 6s infinite alternate gradientAnimation;
 }
+body .services_section {
+  padding: 80px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1019607843);
+}
+body .services_section h2 {
+  text-align: center;
+  font-size: 36px;
+  color: #fff;
+  margin-bottom: 16px;
+}
 body.ar {
   direction: rtl;
 }/*# sourceMappingURL=main.css.map */
