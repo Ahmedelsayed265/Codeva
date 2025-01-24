@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unknown-property */
 import { Canvas, useFrame } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
 import { useRef, useMemo } from "react";
@@ -52,7 +53,8 @@ export default function Hero() {
                 Together
               </h6>
               <h1>
-                Codeva For Innovative Software <span className="highlight">Solutions</span>
+                Codeva For Innovative Software{" "}
+                <span className="highlight">Solutions</span>
               </h1>
               <p>
                 We provide expert website design, development, and mobile

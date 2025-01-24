@@ -256,7 +256,7 @@ body .hero_section .content h6 {
   font-size: 14px;
   border: 1px solid rgba(255, 255, 255, 0.1019607843);
   background: rgba(255, 255, 255, 0.1019607843);
-  padding: 10px 24px;
+  padding: 8px 24px;
   border-radius: 40px;
   display: flex;
   align-items: center;
@@ -460,12 +460,95 @@ body .highlight {
 body .services_section {
   padding: 80px 0;
   border-top: 1px solid rgba(255, 255, 255, 0.1019607843);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1019607843);
+}
+body .services_section h6 {
+  color: #fff;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.1019607843);
+  background: rgba(255, 255, 255, 0.1019607843);
+  padding: 8px 24px;
+  border-radius: 40px;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  gap: 4px;
+}
+body .services_section h6 img {
+  height: 20px;
 }
 body .services_section h2 {
+  margin-top: 16px;
   text-align: center;
   font-size: 36px;
   color: #fff;
   margin-bottom: 16px;
+}
+body .services_section .service_box {
+  width: 100%;
+  padding: 32px;
+  border-radius: 24px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgba(255, 255, 255, 0.1019607843);
+  background: linear-gradient(0.0738312857deg, rgba(0, 85, 255, 0.15) 0%, rgba(97, 97, 97, 0.09) 100%);
+}
+body .services_section .service_box .head {
+  display: flex;
+  margin-bottom: 32px;
+  justify-content: space-between;
+}
+body .services_section .service_box .head span {
+  display: block;
+}
+body .services_section .service_box .head span img {
+  margin-top: 12px;
+  height: 24px;
+  transition: all 0.3s ease-in-out;
+  opacity: 0.5;
+}
+body .services_section .service_box .icon {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: rgba(0, 85, 255, 0.35) 2px 4px 24px 0px;
+}
+body .services_section .service_box .icon img {
+  width: 32px;
+  height: 32px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+body .services_section .service_box .title {
+  font-size: 20px;
+  color: #fff;
+  margin-bottom: 16px;
+}
+body .services_section .service_box .subtitle {
+  font-size: 16px;
+  color: #848584;
+  font-weight: 400;
+  margin-bottom: 24px;
+}
+body .services_section .service_box .description {
+  font-size: 16px;
+  color: #848584;
+  margin: 0;
+}
+body .services_section .service_box:hover {
+  background: linear-gradient(0.0738312857deg, rgba(0, 85, 255, 0.15) 0%, rgba(97, 97, 97, 0.09) 100%);
+}
+body .services_section .service_box:hover .head span img {
+  transform: rotate(45deg);
+  opacity: 1;
 }
 body.ar {
   direction: rtl;
