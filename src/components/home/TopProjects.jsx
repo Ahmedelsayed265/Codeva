@@ -57,6 +57,11 @@ export default function TopProjects() {
                       brings your essentials right to your doorstep, wherever
                       you are.
                     </p>
+                    <div className="tags">
+                      <span>Web Design</span>
+                      <span>Development</span>
+                      <span>Branding</span>
+                    </div>
                   </div>
                 </Link>
               </SwiperSlide>
