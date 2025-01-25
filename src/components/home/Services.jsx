@@ -6,13 +6,13 @@ export default function Services() {
       <div className="container">
         <div className="row">
           <div className="col-12 p-2 mb-3">
-            <h6>
+            <h6 data-aos="fade-up">
               <img src="/flash.svg" alt="idea" /> Our Services
             </h6>
-            <h2>Your Partner in Digital Transformation</h2>
+            <h2 data-aos="fade-up">Your Partner in Digital Transformation</h2>
           </div>
 
-          <div className="col-lg-4 col-12 p-2">
+          <div className="col-lg-4 col-12 p-2" data-aos="fade-up">
             <Link to="/services/1" className="service_box">
               <div className="head">
                 <div className="icon">
@@ -32,7 +32,7 @@ export default function Services() {
             </Link>
           </div>
 
-          <div className="col-lg-4 col-12 p-2">
+          <div className="col-lg-4 col-12 p-2" data-aos="fade-up">
             <Link to="/services/2" className="service_box">
               <div className="head">
                 <div className="icon">
@@ -52,7 +52,7 @@ export default function Services() {
             </Link>
           </div>
 
-          <div className="col-lg-4 col-12 p-2">
+          <div className="col-lg-4 col-12 p-2" data-aos="fade-up">
             <Link to="/services/3" className="service_box">
               <div className="head">
                 <div className="icon">
@@ -72,7 +72,7 @@ export default function Services() {
             </Link>
           </div>
 
-          <div className="col-lg-4 col-12 p-2">
+          <div className="col-lg-4 col-12 p-2" data-aos="fade-up">
             <Link to="/services/4" className="service_box">
               <div className="head">
                 <div className="icon">
@@ -92,7 +92,7 @@ export default function Services() {
             </Link>
           </div>
 
-          <div className="col-lg-4 col-12 p-2">
+          <div className="col-lg-4 col-12 p-2" data-aos="fade-up">
             <Link to="/services/5" className="service_box">
               <div className="head">
                 <div className="icon">
@@ -112,7 +112,7 @@ export default function Services() {
             </Link>
           </div>
 
-          <div className="col-lg-4 col-12 p-2">
+          <div className="col-lg-4 col-12 p-2" data-aos="fade-up">
             <Link to="/services/6" className="service_box">
               <div className="head">
                 <div className="icon">

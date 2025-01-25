@@ -48,21 +48,21 @@ export default function Hero() {
         <div className="row h-100">
           <div className="col-lg-6 col-12 p-2">
             <div className="content">
-              <h6>
+              <h6 data-aos="fade-up">
                 <img src="/idea.svg" alt="idea" /> Let’s Build Your Ideas
                 Together
               </h6>
-              <h1>
+              <h1 data-aos="fade-up">
                 Codeva For Innovative Software{" "}
                 <span className="highlight">Solutions</span>
               </h1>
-              <p>
+              <p data-aos="fade-up">
                 We provide expert website design, development, and mobile
                 application solutions for Android and IOS. Serving a diverse
                 global clientele, we deliver tailored web solutions that empower
                 organizations worldwide to excel in the digital age.
               </p>
-              <div className="buttons">
+              <div className="buttons" data-aos="fade-up">
                 <a href="/about">About Codeva</a>
                 <a href="/portfolio">Our Portfolio</a>
               </div>

@@ -5,11 +5,13 @@ export default function HowTeamWorks() {
         <div className="row">
           <div className="col-lg-6 col-12 p-2">
             <div className="content">
-              <h6>
+              <h6 data-aos="fade-up">
                 <img src="/flash.svg" alt="idea" /> How Our team Work?
               </h6>
-              <h2>We Simplify The Journey From Design To Launch.</h2>
-              <p>
+              <h2 data-aos="fade-up">
+                We Simplify The Journey From Design To Launch.
+              </h2>
+              <p data-aos="fade-up">
                 We are a team of passionate developers, designers, and
                 innovators dedicated to creating software solutions that make a
                 difference in the software development world. Our mission is to
@@ -18,7 +20,7 @@ export default function HowTeamWorks() {
                 exceed their expectations
               </p>
 
-              <div className="steps">
+              <div className="steps" data-aos="fade-up">
                 <div className="step">
                   <div className="head">
                     <div className="icon">
@@ -90,7 +92,7 @@ export default function HowTeamWorks() {
             </div>
           </div>
           <div className="col-lg-6 col-12 p-2">
-            <div className="img">
+            <div className="img" data-aos="zoom-in-up">
               <img src="/team.png" alt="about" />
             </div>
           </div>

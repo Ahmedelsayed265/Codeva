@@ -7,11 +7,11 @@ export default function About() {
         <div className="row">
           <div className="col-lg-6 col-12 p-2">
             <div className="content">
-              <h2>
+              <h2 data-aos="fade-up">
                 Building Stronger Brands Creating{" "}
                 <span className="highlight">Impressions!</span>
               </h2>
-              <p>
+              <p data-aos="fade-up">
                 we are a team of passionate developers, designers, and
                 innovators dedicated to creating software solutions that make a
                 difference in the software development world. Our mission is to
@@ -20,7 +20,7 @@ export default function About() {
                 exceed their expectations.
               </p>
 
-              <ul>
+              <ul data-aos="fade-up">
                 <li>
                   <img src="/check.svg" alt="check" /> Expertise in cutting-edge
                   technologies
@@ -34,11 +34,13 @@ export default function About() {
                 </li>
               </ul>
 
-              <Link to="/about">Read More</Link>
+              <Link to="/about" data-aos="fade-up">
+                Read More
+              </Link>
             </div>
           </div>
           <div className="col-lg-6 col-12 p-2">
-            <div className="img">
+            <div className="img" data-aos="zoom-in-up">
               <img src="/about.jpeg" alt="about" />
             </div>
           </div>

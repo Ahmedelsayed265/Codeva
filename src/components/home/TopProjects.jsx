@@ -9,10 +9,10 @@ export default function TopProjects() {
       <div className="container">
         <div className="row">
           <div className="col-12 p-2 mb-3">
-            <h6>
+            <h6 data-aos="fade-up">
               <img src="/flash.svg" alt="idea" /> Our Best Projects
             </h6>
-            <h2>Our Selected Projects Showcase of Excellence</h2>
+            <h2 data-aos="fade-up">Our Selected Projects Showcase of Excellence</h2>
           </div>
 
           <Swiper
