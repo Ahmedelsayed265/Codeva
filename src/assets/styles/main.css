@@ -852,6 +852,38 @@ body .how_team_works .content .steps .step h4 {
 body .how_team_works .content .steps .step p {
   margin: 0;
 }
+body .portfolio {
+  min-height: 100vh;
+}
+body .portfolio .header {
+  padding-top: 25vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+body .portfolio .header h6 {
+  color: #fff;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.1019607843);
+  background: rgba(255, 255, 255, 0.1019607843);
+  padding: 8px 24px;
+  border-radius: 40px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+body .portfolio .header h6 img {
+  height: 20px;
+}
+body .portfolio .header h1 {
+  color: #fff;
+  font-size: 62px;
+  text-align: center;
+}
 body.ar {
   direction: rtl;
 }/*# sourceMappingURL=main.css.map */
