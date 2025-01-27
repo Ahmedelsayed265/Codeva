@@ -33,10 +33,9 @@ export default function About() {
                   success
                 </li>
               </ul>
-
-              <Link to="/about" data-aos="fade-up">
-                Read More
-              </Link>
+              <div data-aos="fade-up" className="d-flex align-items-center">
+                <Link to="/about">Read More</Link>
+              </div>
             </div>
           </div>
           <div className="col-lg-6 col-12 p-2">
