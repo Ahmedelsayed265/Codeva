@@ -323,9 +323,9 @@ body footer .copyRights .social a:hover {
   color: #fff;
 }
 body .skills_swiper {
-  margin: 0 0 80px;
-  -webkit-mask-image: linear-gradient(90deg, rgba(0, 0, 0, 0) 7%, #000 20% 70%, rgba(0, 0, 0, 0) 93%);
-          mask-image: linear-gradient(90deg, rgba(0, 0, 0, 0) 7%, #000 20% 70%, rgba(0, 0, 0, 0) 93%);
+  margin: 0 0 40px;
+  background: rgba(255, 255, 255, 0.0509803922);
+  padding: 12px 0;
 }
 body .skills_swiper .swiper-wrapper {
   transition-timing-function: linear;
@@ -339,7 +339,7 @@ body .skills_swiper .swiper-slide {
 body .skills_swiper .swiper-slide .skill {
   color: #fff;
   white-space: nowrap;
-  font-size: 60px;
+  font-size: 32px;
   text-align: center;
   display: flex;
   align-items: center;
@@ -348,9 +348,9 @@ body .skills_swiper .swiper-slide .skill {
 body .skills_swiper .swiper-slide .skill::after {
   content: "";
   display: block;
-  width: 12px;
-  height: 12px;
-  background: #848584;
+  width: 8px;
+  height: 8px;
+  background: #fff;
   border-radius: 50%;
   transition: all 0.3s ease-in-out;
 }
@@ -538,14 +538,15 @@ body .hero_section .content .buttons {
 }
 body .hero_section .content .buttons a {
   color: #fff;
-  background-image: linear-gradient(150deg, rgb(37, 0, 93) 0%, rgb(102, 0, 255) 61%, rgb(255, 184, 91) 100%);
   padding: 12px 32px;
   border-radius: 60px;
   transition: all 0.3s ease-in-out;
-}
-body .hero_section .content .buttons a:last-child {
   background: #fff;
   color: #0d6efd;
+}
+body .hero_section .content .buttons a:last-child {
+  background: #0d6efd;
+  color: #fff;
 }
 @media screen and (max-width: 576px) {
   body .hero_section .content .buttons a {
@@ -555,12 +556,13 @@ body .hero_section .content .buttons a:last-child {
 }
 body .statistics_section {
   padding: 80px 0;
-  background: #fff;
+  border-top: 1px solid rgba(255, 255, 255, 0.1019607843);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1019607843);
 }
 body .statistics_section h2 {
   text-align: center;
   font-size: 42px;
-  color: #000;
+  color: #fff;
   margin-bottom: 16px;
 }
 body .statistics_section p {
@@ -572,22 +574,23 @@ body .statistics_section p {
 body .statistics_section .thumb {
   text-align: center;
   padding: 8px 24px;
-  background: #fafafa;
-  color: #0d6efd;
+  background: rgba(255, 255, 255, 0.1019607843);
+  color: #fff;
   margin: 0 auto 16px;
   width: -moz-fit-content;
   width: fit-content;
   border-radius: 40px;
+  font-weight: 400;
   display: flex;
   align-items: center;
-  gap: 4px;
+  gap: 8px;
 }
 body .statistics_section .thumb::before {
   content: "";
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background: #0d6efd;
+  background: #fff;
 }
 body .statistics_section .boxes {
   display: grid;
@@ -602,7 +605,7 @@ body .statistics_section .boxes .box {
   padding: 24px;
   gap: 8px;
   border-radius: 12px;
-  background: #fafafa;
+  border: 1px solid rgba(255, 255, 255, 0.1019607843);
 }
 body .statistics_section .boxes .box h4 {
   font-size: 32px;
@@ -610,7 +613,7 @@ body .statistics_section .boxes .box h4 {
 }
 body .statistics_section .boxes .box h6 {
   font-size: 16px;
-  color: #000;
+  color: #fff;
 }
 @keyframes gradientAnimation {
   0% {
@@ -701,6 +704,8 @@ body .highlight {
 }
 body .services_section {
   padding: 60px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1019607843);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1019607843);
 }
 body .services_section h6 {
   color: #fff;
@@ -1090,15 +1095,15 @@ body .contact_section form button {
   width: fit-content;
   padding: 16px 0;
   border-radius: 12px;
-  background: #0d6efd;
-  color: #fff;
   width: 100%;
+  background: #fff;
+  color: #000;
   transition: 0.3s ease-in-out;
   margin-top: 12px;
 }
 body .contact_section form button:hover {
-  background: #fff;
-  color: #000;
+  background: #0d6efd;
+  color: #fff;
 }
 body .not_found_section {
   height: 100dvh;
@@ -1139,6 +1144,9 @@ body .not_found_section .container a {
 body .not_found_section .container a:hover {
   background: #fff;
   color: #000;
+}
+body .service_details {
+  padding: 20vh 0 60px;
 }
 body.ar {
   direction: rtl;

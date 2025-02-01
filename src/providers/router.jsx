@@ -4,6 +4,7 @@ import NotFound from "./../routes/NotFound";
 import Home from "./../routes/Home";
 import Portfolio from "../routes/Portfolio";
 import Contact from "../routes/Contact";
+import ServiceDetails from "../routes/ServiceDetails";
 
 export const router = createBrowserRouter([
   {
@@ -22,7 +23,20 @@ export const router = createBrowserRouter([
       {
         path: "contact",
         element: <Contact />,
-      }
+      },
+      {
+        path: "services",
+        children: [
+          {
+            index: true,
+            element: <ServiceDetails />,
+          },
+          {
+            path: ":id",
+            element: <ServiceDetails />,
+          },
+        ],
+      },
     ],
   },
 ]);
