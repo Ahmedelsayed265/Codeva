@@ -1100,6 +1100,46 @@ body .contact_section form button:hover {
   background: #fff;
   color: #000;
 }
+body .not_found_section {
+  height: 100dvh;
+}
+body .not_found_section .container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 16px;
+}
+body .not_found_section .container h1 {
+  text-align: center;
+  font-size: 64px;
+  font-weight: 400;
+  color: #fff;
+}
+@media screen and (max-width: 576px) {
+  body .not_found_section .container h1 {
+    font-size: 42px;
+  }
+}
+body .not_found_section .container p {
+  text-align: center;
+  font-size: 16px;
+  color: #848584;
+  margin: 0;
+}
+body .not_found_section .container a {
+  padding: 12px 32px;
+  border-radius: 120px;
+  background: #0d6efd;
+  color: #fff;
+  transition: 0.3s ease-in-out;
+  margin-top: 12px;
+}
+body .not_found_section .container a:hover {
+  background: #fff;
+  color: #000;
+}
 body.ar {
   direction: rtl;
 }/*# sourceMappingURL=main.css.map */
