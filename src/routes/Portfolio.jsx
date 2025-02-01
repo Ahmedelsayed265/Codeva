@@ -4,9 +4,7 @@ export default function Portfolio() {
   return (
     <section className="portfolio">
       <div className="header">
-        <h1>
-          Check Out Some <br /> Extra-Ordinary Work.
-        </h1>
+        <h1>Check Out Some Of Our Extra-Ordinary Work.</h1>
       </div>
 
       <div className="container">
@@ -52,6 +50,21 @@ export default function Portfolio() {
               </Link>
             </div>
           ))}
+          <div className="col-12 p-2 mt-5">
+            <div className="join_us">
+              <video src="/video.mp4"></video>
+              <h2>
+                Each Project we Undertake <br /> is a Unique Opportunity.
+              </h2>
+              <p>
+                Ready to take the next step? Join us now and start transforming
+                your vision into reality with expert support.
+              </p>
+              <Link to="/contact">
+                Let&apos;s Talk <i className="fa-regular fa-arrow-right"></i>
+              </Link>
+            </div>
+          </div>
         </div>
       </div>
     </section>

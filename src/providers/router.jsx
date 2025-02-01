@@ -3,6 +3,7 @@ import RootLayout from "./../layouts/RootLayout";
 import NotFound from "./../routes/NotFound";
 import Home from "./../routes/Home";
 import Portfolio from "../routes/Portfolio";
+import Contact from "../routes/Contact";
 
 export const router = createBrowserRouter([
   {
@@ -18,6 +19,10 @@ export const router = createBrowserRouter([
         path: "portfolio",
         element: <Portfolio />,
       },
+      {
+        path: "contact",
+        element: <Contact />,
+      }
     ],
   },
 ]);

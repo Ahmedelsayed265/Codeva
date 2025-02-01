@@ -95,3 +95,23 @@ input[type="number"] {
 input[type="email"] {
   direction: ltr !important;
 }
+
+.animated_img {
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    width: 215%;
+    height: 0%;
+    left: 50%;
+    top: 50%;
+    background-color: rgba(255, 255, 255, 0.3);
+    transform: translate(-50%, -50%) rotate(-45deg);
+    z-index: 1;
+  }
+  &:hover::after {
+    height: 250%;
+    transition: all 600ms linear;
+    background-color: transparent;
+  }
+}

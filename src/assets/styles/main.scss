@@ -10,6 +10,109 @@ body {
   @import "./home";
   @import "./portfolio";
 
+  main {
+    min-height: calc(100vh - 380px);
+  }
+
+  .contact_section {
+    padding: 20vh 0 80px;
+    h1 {
+      text-align: center;
+      font-size: 64px;
+      color: $white;
+      font-weight: 400;
+      @media screen and (max-width: 576px) {
+        font-size: 36px;
+      }
+    }
+
+    .contact_info {
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+      .box {
+        border: 1px solid #ffffff1a;
+        border-radius: 16px;
+        padding: 32px 24px;
+        h6 {
+          display: flex;
+          align-items: center;
+          gap: 12px;
+          color: $white;
+          font-size: 20px;
+          border-bottom: 1px solid #ffffff1a;
+          padding-bottom: 16px;
+          margin-bottom: 16px;
+        }
+        a,
+        p {
+          color: $text;
+          transition: $transition;
+          display: block;
+          margin-bottom: 12px;
+          &:last-child {
+            margin-bottom: 0;
+          }
+          &:hover {
+            color: $white;
+          }
+        }
+      }
+    }
+
+    form {
+      padding: 32px;
+      border: 1px solid #ffffff1a;
+      border-radius: 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      .form_group {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+        @media screen and (max-width: 576px) {
+          flex-direction: column;
+        }
+      }
+      .input_field {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        gap: 8px;
+        label {
+          color: $white;
+        }
+        input,
+        select,
+        textarea {
+          padding: 16px;
+          border-radius: 12px;
+          border: 1px solid #ffffff1a;
+          background: $main;
+          color: $white;
+          option {
+            color: $white;
+          }
+        }
+      }
+      button {
+        width: fit-content;
+        padding: 16px 0;
+        border-radius: 12px;
+        background: $blue;
+        color: $white;
+        width: 100%;
+        transition: 0.3s ease-in-out;
+        margin-top: 12px;
+        &:hover {
+          background: $white;
+          color: $main;
+        }
+      }
+    }
+  }
+
   &.ar {
     direction: rtl;
   }
