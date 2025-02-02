@@ -52,7 +52,7 @@ export default function Portfolio() {
           ))}
           <div className="col-12 p-2 mt-5">
             <div className="join_us">
-              <video src="/video.mp4"></video>
+              <video src="/video.mp4" muted playsInline></video>
               <h2>
                 Each Project we Undertake <br /> is a Unique Opportunity.
               </h2>

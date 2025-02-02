@@ -69,12 +69,11 @@
 
 .statistics_section {
   padding: 80px 0;
-  border-top: 1px solid #ffffff1a;
-  border-bottom: 1px solid #ffffff1a;
+  background: $white;
   h2 {
     text-align: center;
     font-size: 42px;
-    color: $white;
+    color: $blue;
     margin-bottom: 16px;
   }
   p {
@@ -86,8 +85,8 @@
   .thumb {
     text-align: center;
     padding: 8px 24px;
-    background: #ffffff1a;
-    color: $white;
+    background: #fafafa;
+    color: $blue;
     margin: 0 auto 16px;
     width: fit-content;
     border-radius: 40px;
@@ -100,7 +99,7 @@
       width: 8px;
       height: 8px;
       border-radius: 50%;
-      background: $white;
+      background: $blue;
     }
   }
   .boxes {
@@ -112,6 +111,7 @@
       flex-direction: column;
       padding: 24px;
       gap: 8px;
+      background: #fafafa;
       border-radius: 12px;
       border: 1px solid #ffffff1a;
       h4 {
@@ -120,7 +120,7 @@
       }
       h6 {
         font-size: 16px;
-        color: $white;
+        color: $main;
       }
     }
   }
